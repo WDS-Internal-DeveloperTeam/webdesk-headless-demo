@@ -2,8 +2,25 @@
   <img src="https://storage.googleapis.com/bigcommerce-developers/images/catalyst_readme_banner.png" alt="Catalyst for Composable Commerce Image Banner" title="Catalyst">
 </a>
 
+
 <br />
 <br />
+
+
+## Use this Repo : 
+
+1. **Install pnpm:**  
+   [https://pnpm.io/installation](https://pnpm.io/installation)
+
+2. **Clone the repository:**  
+   ```bash
+   git clone https://github.com/WDS-Internal-DeveloperTeam/webdesk-headless-demo
+2. **install:**  
+   ```bash
+   pnpm install
+3. **run:**  
+   ```bash
+   npm run dev
 
 <div align="center">
 
@@ -88,6 +105,8 @@ Learn more about Catalyst at [catalyst.dev](https://catalyst.dev).
 > If you wish to contribute back to Catalyst or create a fork of Catalyst, you can check the [docs for this monorepo](https://catalyst.dev/docs/monorepo) to get started.
 >
 > 
+
+
   ## General Issue
 
 - Fix NPM Permission Issues (npm cache clean --force)
@@ -123,3 +142,7 @@ If pnpm is not recognized, manually add its path to Windows Environment Variable
   pnpm setup
 
   Then, restart your terminal.
+
+
+
+
