@@ -86,3 +86,40 @@ Learn more about Catalyst at [catalyst.dev](https://catalyst.dev).
 > [!IMPORTANT]
 > If you just want to build a storefront, start with the [CLI](#quickstart) which will install the Next.js application in [/core](/core/).
 > If you wish to contribute back to Catalyst or create a fork of Catalyst, you can check the [docs for this monorepo](https://catalyst.dev/docs/monorepo) to get started.
+>
+> 
+  ## General Issue
+
+- Fix NPM Permission Issues (npm cache clean --force)
+- Try a Different Folder (npm create @bigcommerce/catalyst@latest)
+- Verify BigCommerce API Credentials
+  
+  > Catalyst requires API credentials for BC Headless. To get them:
+
+    - Log in to BigCommerce Admin.
+    - Go to Settings > API Accounts > Create V2/V3 API Token.
+    - Copy the Client ID, Client Secret, and Access Token.
+
+- PNPM > Path Issues: Add PNPM to Environment Variables    
+
+If pnpm is not recognized, manually add its path to Windows Environment Variables:
+
+    Open Run (Win + R), type sysdm.cpl, and press Enter.
+    Go to Advanced > Environment Variables.
+    Under System Variables, find Path and click Edit.
+    Click New, and add:
+
+    C:\Users\<YourUser>\AppData\Local\pnpm
+
+  Restart Command Prompt and try:
+
+      pnpm -v
+
+  b) Fix Permission Issues
+
+  If you get permission errors, clear the cache and reinstall:
+
+  pnpm store prune
+  pnpm setup
+
+  Then, restart your terminal.
